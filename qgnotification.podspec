@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.default_subspec = "ios-notification-sdk"  
   
   s.subspec 'ios-notification-sdk' do |ss|
-    ss.source_files = 'iCarousel.h', 'iCarousel.m', 'QGNotification.h'
+    ss.source_files = 'iCarousel.h', 'iCarousel.m', 'QGNotificationSdk.h'
     ss.vendored_library = "libQGNotificationSdk.a"
   end
   
