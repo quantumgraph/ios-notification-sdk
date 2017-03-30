@@ -12,9 +12,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/quantumgraph/ios-notification-sdk.git", :tag => "v#{s.version}"}
   s.default_subspec = "ios-notification-sdk"  
   
-  s.subspec 'ios-notification' do |ss|
+  s.subspec 'ios-notification-sdk' do |ss|
     ss.source_files = 'iCarousel.h', 'iCarousel.m', 'QGNotification.h'
     ss.vendored_library = "libQGNotificationSdk.a"
   end
-
+  
+  s.requires_arc = true
 end
