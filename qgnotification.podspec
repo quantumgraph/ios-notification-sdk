@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
         :file => 'LICENSE'
     }
     s.author            = {
-        'Vivek Pandey' => 'vivek@quantumgraph.com'
+        'QUANTUMGRAPH' => 'vivek@quantumgraph.com'
     }
     s.source            = {
         :git => 'https://github.com/quantumgraph/ios-notification-sdk.git',
@@ -19,9 +19,9 @@ Pod::Spec.new do |s|
     s.platform     = :ios, '10.0'
     s.source_files      = '*.{m,h}'
     s.requires_arc      = true
-    s.default_subspec   = 'ios-notification-sdk'
+    s.default_subspec   = 'QGNotificationSdk'
 
-    s.subspec 'ios-notification-sdk' do |ss|
+    s.subspec 'QGNotificationSdk' do |ss|
       ss.source_files = '*.{h,m}'
       ss.vendored_library = 'libQGNotificationSdk.a'
     end
