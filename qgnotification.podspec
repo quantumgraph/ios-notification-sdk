@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     }
     s.source            = {
         :git => 'https://github.com/quantumgraph/ios-notification-sdk.git',
-        :tag => v#{s.version}
+        :tag => "v#{s.version}"
     }
     s.platform     = :ios, '10.0'
     s.source_files      = 'ios-notification-sdk/*.{m,h}'
