@@ -1,8 +1,9 @@
 Pod::Spec.new do |s|
 
     s.name              = 'qgnotification'
-    s.version           = '3.2.0'
-    s.summary           = 'iOS Notification Sdk provides unique way to show Image, video, GIF, Audio push in ios 10 and above. It also supports Carousel and Slider Notifications.'
+    s.version           = '3.1.1'
+    s.documentation_url = 'http://docs.qgraph.io'
+    s.summary		= 'This sdk creates Carousel/Slider, Image, Video, Audio and GIF push notifications.'
     s.homepage          = 'https://github.com/quantumgraph/ios-notification-sdk'
     s.license           = {
         :type => 'MIT',
@@ -16,7 +17,13 @@ Pod::Spec.new do |s|
         :tag => "v#{s.version}"
     }
     s.platform     = :ios, '10.0'
-    s.source_files      = 'ios-notification-sdk/*.{m,h}'
+    s.source_files      = '*.{m,h}'
     s.requires_arc      = true
+    s.default_subspec   = 'ios-notification-sdk'
+
+    s.subspec 'ios-notification-sdk' do |ss|
+      ss.source_files = '*.{h,m}'
+      ss.vendored_library = 'libQGNotificationSdk.a'
+    end
 
 end
