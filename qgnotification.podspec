@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name              = 'qgnotification'
-    s.version           = '3.1.1'
+    s.version           = '3.2.0'
     s.documentation_url = 'http://docs.qgraph.io'
     s.summary		= 'This sdk creates Carousel/Slider, Image, Video, Audio and GIF push notifications.'
     s.homepage          = 'https://github.com/quantumgraph/ios-notification-sdk'
