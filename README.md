@@ -19,32 +19,33 @@ NOTE: Don't add this to Main Target. Also Do not add QGSdk to these targets.
 For example:
 Your Podfile may look like:
 
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+```
 
-target 'ContentExtensionTarget' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+        target 'ContentExtensionTarget' do
+          # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+          # use_frameworks
 
-  pod 'qgnotification'
-end
+          pod 'qgnotification'
+        end
 
-target 'ServiceExtensionTarget' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+        target 'ServiceExtensionTarget' do
+          # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+          # use_frameworks
 
-  pod 'qgnotification'
-end
+          pod 'qgnotification'
+        end
 
-target 'MainTarget' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+        target 'MainTarget' do
+          # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+          # use_frameworks
 
-  #add QGSdk to main Target
-  pod 'quantumgraph'
-end
+          #add QGSdk to main Target
+          pod 'quantumgraph'
+        end
 
-To install the pod run 'pod install'
+```
+
+To install the pod run ```pod install```
 
 To update to a specific version, you can add:
-pod 'qgnotification', '3.2.0' #3.2.0 is the version no.
+```pod 'qgnotification', '3.2.0' ```
