@@ -1,21 +1,22 @@
 Pod::Spec.new do |s|
-  s.name         = "qgnotification"
-  s.version      = "3.2.0"
-  s.summary      = "QGraph iOS Notification Sdk helps you create Carousel/Slider Push and Basic Image, Video, GIF and Audio Push Notification."
 
-  s.homepage     = "http://qgraph.io"
-  s.documentation_url = "http://docs.qgraph.io/en/latest/integrating-ios-sdk.html"
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "qgnotification" => "vivek@quantumgraph.com" }
-  s.platform     = :ios, '10.0'
-  s.source       = { :git => "https://github.com/quantumgraph/ios-notification-sdk.git", :tag => "v#{s.version}"}
-  s.default_subspec = "ios-notification-sdk"  
-  
-  s.subspec 'ios-notification-sdk' do |ss|
-    ss.source_files = 'iCarousel.h', 'iCarousel.m', 'QGNotificationSdk.h'
-    ss.vendored_library = "libQGNotificationSdk.a"
-  end
-  
-  s.requires_arc = true
+    s.name              = 'qgnotification'
+    s.version           = '3.2.0'
+    s.summary           = 'iOS Notification Sdk provides unique way to show Image, video, GIF, Audio push in ios 10 and above. It also supports Carousel and Slider Notifications.'
+    s.homepage          = 'https://github.com/quantumgraph/ios-notification-sdk'
+    s.license           = {
+        :type => 'MIT',
+        :file => 'LICENSE'
+    }
+    s.author            = {
+        'Vivek Pandey' => 'vivek@quantumgraph.com'
+    }
+    s.source            = {
+        :git => 'https://github.com/quantumgraph/ios-notification-sdk.git',
+        :tag => v#{s.version}
+    }
+    s.platform     = :ios, '10.0'
+    s.source_files      = 'ios-notification-sdk/*.{m,h}'
+    s.requires_arc      = true
+
 end
